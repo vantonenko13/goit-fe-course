@@ -4,7 +4,7 @@
 }
 body {
     font-family: 'Playfair Display', serif;
-    color: #666666;
+    color: #666;
 }
 
 .container {
@@ -61,14 +61,14 @@ img {
 
 .loader {
     text-align: center;
-    margin:0 auto 50px;
+    margin:0 auto;
     display: block;
     font-size: 18px;
     border: 1px solid #333;
     padding: 10px 20px;
     background: #fff;
     cursor: pointer;
-    opacity:0.6;
+    opacity: 0.6;
 }
 
 button:hover {
@@ -97,5 +97,9 @@ section {
 .text {
     margin: 0;
     font-size: 14px;
+    padding-bottom: 100px;
+}
+
+div.button {
     padding-bottom: 100px;
 }
