@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.header {
+    margin-bottom: 100px;
 }
 
 .clearfix::after {
@@ -56,14 +61,24 @@
     color: #1abc9c  
 }
 
-.main_products {
-    padding-top: 100px;
+.catalog-item a {
+    display: block;
+    height: auto;
+    overflow: hidden;
+    transition: all 0.25s;
+}
+
+
+.catalog-item a:hover {
+    background-color: #05ffcd;
+    transition: all 2s;
 }
 
 .featured_products {
     text-align: center;
     font-size: 48px;
     opacity: 0.7;
+    margin-bottom: 90px;
 }
 
 .featured_products::after {
@@ -71,6 +86,109 @@
     display: block;
     width: 164px;
     height: 7px;
-    margin: 32px auto 0;
+    margin: 30px auto;
     background-color: #1abc9c;
 }
+
+.catalog {
+    margin-bottom: 100px;
+}
+
+.catalog-wrapper {
+    list-style: none;
+}
+
+.catalog-item {
+    font-size: 0;
+    float: left;
+    max-width: 255px;
+    margin-bottom: 30px;
+    font-family: 'roboto' sans-serif;
+}
+
+.catalog-item:not(:nth-child(4n-0)) {
+    margin-right: 30px;
+}
+
+.info {
+    float: left;
+    text-transform: uppercase;
+    width: 200px;
+    line-height: 40px;
+    font-size: 18px;
+    background-color: #323232;
+    opacity: 0.9;
+    color: #fff;
+    text-indent: 10px;
+}
+
+.info:hover {
+    opacity: 0.4;
+    transition: all 1.5s;
+}
+.price {
+    float: left;
+    text-transform: uppercase;
+    width: 55px;
+    line-height: 40px;
+    font-size: 18px;
+    text-align: center;
+    background-color: #8c8c8c;
+    opacity: 0.7;
+    color: #fff;
+}
+
+img {
+    border-radius: 100px 0 100px 0;
+}
+
+.news-list {
+    display: inline-block;
+    max-width: 350px;
+    margin-right: 30px;
+    
+}
+
+.news-list:nth-child(3n-0) {
+    margin-right: 0;
+}
+
+.catalog-wrapper {
+    font-size: 0;
+}
+
+.description {
+    font-size: 16px;
+    line-height: 25px;
+    opacity: 0.6;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.heading {
+    font-size: 18px;
+    line-height: 30px;
+    opacity: 0.7;
+    font-weight: 800;
+}
+
+.heading::after {
+    content:"";
+    display: block;
+    width: 136px;
+    height: 4px;
+    background-color: #1abc9c;
+    margin: 10px 0 30px 0;
+}
+
+.button {
+    width: 160px;
+    height: 50px;
+    background-color: #47dfc5;
+    border-radius: 5px;
+    border-color: #47dfc5;
+    font-size: 16px;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
