@@ -47,11 +47,14 @@
     display: inline-block;
 }
 
+.header__nav_list li:not(:last-child) {
+    margin-right: 35px;
+}
+
 .nav__list_element a {
     text-decoration: none;
     color: #000;
     display: block;
-    margin-left: 35px;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 14px;
@@ -67,7 +70,6 @@
     overflow: hidden;
     transition: all 0.25s;
 }
-
 
 .catalog-item a:hover {
     background-color: #05ffcd;
@@ -86,7 +88,7 @@
     display: block;
     width: 164px;
     height: 7px;
-    margin: 30px auto;
+    margin: 30px auto 0;
     background-color: #1abc9c;
 }
 
@@ -143,10 +145,14 @@ img {
 }
 
 .news-list {
-    display: inline-block;
+   
     max-width: 350px;
     margin-right: 30px;
     
+}
+
+.news-list {
+    float: left;
 }
 
 .news-list:nth-child(3n-0) {
@@ -162,7 +168,7 @@ img {
     line-height: 25px;
     opacity: 0.6;
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .heading {
@@ -178,17 +184,28 @@ img {
     width: 136px;
     height: 4px;
     background-color: #1abc9c;
-    margin: 10px 0 30px 0;
+    margin: 10px auto 0;
 }
 
 .button {
-    width: 160px;
-    height: 50px;
-    background-color: #47dfc5;
-    border-radius: 5px;
-    border-color: #47dfc5;
-    font-size: 16px;
-    margin-bottom: 50px;
-    color: #fff;
+        width: 160px;
+        height: 50px;
+        border-radius: 3px;
+        border: none;
+        background-color: #4ec6ab;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 26px;
+        padding: 20px 42px;
+    
+}
+
+.news {
+    padding-bottom: 50px;
+}
+
+.button:hover {
+    background-color: #5f5f5f;
 }
 
