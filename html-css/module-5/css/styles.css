@@ -1,8 +1,12 @@
 * {
-    margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif; 
+}
+
+.container {
+    width: 1110px;
+    margin: 0 auto;
 }
 
 .clearfix::after {
@@ -13,20 +17,20 @@
 
 .wrapper {
     background-color: #e9f0fd;
+    margin: 0 auto;
 }
 
 .header {
     background-color: #fff;
-    width: 1600px;
     height: 90px;
 }
 
 .logo_mart {
     float: left;
-    text-decoration: none;
-    margin: 30px 0 0 245px; 
+    text-decoration: none; 
     font-size: 30px;
     color: #555252;
+    line-height: 90px;
 }
 
 .logo_mart::first-letter {
@@ -40,16 +44,17 @@
 
 .header__nav_list {
     list-style: none;
-    margin: 40px 245px 0 0;
+    margin: 0;
+    line-height: 90px;
 }
 
 .nav__list_element {
-    display: inline-block;
+   float: left;
 }
 
 .header__nav_item {
     text-decoration: none;
-    font-weight: 14px;
+    font-size: 16px;
     color: #555252;
     font-weight: 800;
 }
@@ -63,6 +68,8 @@
 }
 
 .slider_container {
+    background-image: url(../Pictures/slide1.png);
+    background-repeat: no-repeat;
     position: relative;
     width: 1600px;
     height: 600px;
@@ -70,7 +77,6 @@
 
 .slide1 {
     position: absolute;
-    z-index: 80;
 }
 
 .slide1:hover {
@@ -90,7 +96,6 @@
     top: 50%;
     transform: translateY(-50%);
     font-size: 0;
-    z-index: 120;
     cursor: pointer;
     opacity: 0.7;
 }
@@ -101,10 +106,12 @@
 
 .slider_ctrl_prev {
     left: 245px;
+    background-image: url(../Pictures/button_prev.png);
 }
 
 .slider_ctrl_next {
     right: 245px;
+    background-image: url(../Pictures/button_next.png);
 }
 
 .slider_heading {
@@ -135,6 +142,7 @@
     text-align: center;
     font-size: 48px;
     opacity: 0.7;
+    margin: 0 0 85px 0;
 }
 
 .news_heading::after {
@@ -152,7 +160,7 @@
 }
 .news {
     list-style: none;
-    margin-top: 80px;
+    margin: 0;
 }
 
 .news_element {
@@ -178,6 +186,7 @@
     width: 166px;
     height: 107px;
     top: 80px;
+    margin: 0 auto;
 }
 
 
@@ -242,9 +251,10 @@
     color: #fff;
     display: inline-block;
     opacity: 0.7;
+    margin: 0;
 }
 
-.description:hover p {
+.news_element:hover p {
     background-color: #0be4b5;
 }
 
@@ -262,15 +272,10 @@
     line-height: 40px;
 }
 
-.catalog {
-    width: 1110px;
-    font-size: 0;
-    margin: 0 auto;
-}
+
 
 .news_element {
-    display: inline-block;
-    z-index: 200;
+  float: left;
 }
 
 .news_element:not(:last-child) {
@@ -278,7 +283,6 @@
 }
 
 .footer {
-    width: 1600px;
     height: 90px;
     background-color: #323232;
     text-align: center;
