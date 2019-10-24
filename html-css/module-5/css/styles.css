@@ -1,6 +1,4 @@
-* {
-    padding: 0;
-    box-sizing: border-box;
+body{
     font-family: 'Roboto', sans-serif;
 }
 
@@ -8,16 +6,15 @@
     width: 1110px;
     margin: 0 auto;
 }
+.container_fluid{
+    width: 100%;
+}
 
 .clearfix::after {
     content: "";
     display: block;
     clear: both;
   }
-
-.wrapper {
-    margin: 0 auto;
-}
 
 .header {
     background-color: #fff;
@@ -72,6 +69,7 @@
     background-image: url(../Pictures/slide1.png);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 }
 
 .slider_container {
@@ -167,7 +165,6 @@
 .new_collection {
     padding: 90px 0;
     background-color: #e9f0fd;
-    width: 1600px;
     margin: 0 auto;
 }
 .news {
@@ -294,7 +291,6 @@
 
 .footer {
     margin: 0 auto;
-    width: 1600px;
     height: 90px;
     background-color: #323232;
     text-align: center;
