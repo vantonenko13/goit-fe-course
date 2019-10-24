@@ -9,10 +9,10 @@
         <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Roboto&display=swap" rel="stylesheet">
     </head>
     <body class="wrapper">
-        <header class="header container clearfix">
+        <header class="header container">
             <a class="logo_mart" href="#">MART</a>
             <nav class="menu">
-                <ul class="header__nav_list">
+                <ul class="header__nav_list clearfix">
                     <li class="nav__list_element"><a class="header__nav_item" href="">HOME</a></li>
                     <li class="nav__list_element"><a class="header__nav_item" href="">ABOUT US</a></li>
                     <li class="nav__list_element"><a class="header__nav_item" href="">PAGE</a></li>
@@ -25,8 +25,12 @@
         <main>
             <section class="section_slider">
                 <div class="slider_container container">
-                    <h2 class="slider_heading h2">AFFORDABLE PARIS TOURS</h2>
-                    <h3 class="slider_heading h3">CITY TOURS / TOUR TICKETS / TOUR GUIDES</h3>
+                    <ul class="title_list">
+                        <li class="title_item">
+                            <h2 class="slider_heading h2">AFFORDABLE PARIS TOURS</h2>
+                            <h3 class="slider_heading h3">CITY TOURS / TOUR TICKETS / TOUR GUIDES</h3>
+                        </li>          
+                    </ul>
                     <div class="slider_nav">
                         <button class="slider_ctrl slider_ctrl_prev"></button>
                         <button class="slider_ctrl slider_ctrl_next"></button>
@@ -34,8 +38,8 @@
                 </div>
             </section>
             <section class="new_collection">
-                <h2 class="news_heading">NEW COLLECTION</h2>
                 <div class="container">
+                    <h2 class="news_heading">NEW COLLECTION</h2>               
                     <ul class="news clearfix">
                         <li class="news_element ">
                             <div class="black_fon">
@@ -101,8 +105,10 @@
                 </div>
             </section> 
         </main>
-        <footer class="footer container">
-            <p class="footer_text">All Rights Reserved © Dokan | Designed <span class="text_color">ThemenGraph</span></p>
+        <footer class="footer">
+            <div class="container"></div>
+                <p class="footer_text">All Rights Reserved © Dokan | Designed <span class="text_color">ThemenGraph</span></p>
+            </div>
         </footer>
     </body>
 </html>

@@ -1,7 +1,7 @@
 * {
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif; 
+    font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -16,7 +16,6 @@
   }
 
 .wrapper {
-    background-color: #e9f0fd;
     margin: 0 auto;
 }
 
@@ -31,6 +30,7 @@
     font-size: 30px;
     color: #555252;
     line-height: 90px;
+    display: block;
 }
 
 .logo_mart::first-letter {
@@ -57,6 +57,7 @@
     font-size: 16px;
     color: #555252;
     font-weight: 800;
+    display: block;
 }
 
 .logo_mart:hover, .header__nav_item:hover {
@@ -67,11 +68,14 @@
     margin-right: 35px;
 }
 
-.slider_container {
+.section_slider {
     background-image: url(../Pictures/slide1.png);
     background-repeat: no-repeat;
+    background-position: center;
+}
+
+.slider_container {
     position: relative;
-    width: 1600px;
     height: 600px;
 }
 
@@ -105,33 +109,38 @@
 }
 
 .slider_ctrl_prev {
-    left: 245px;
+    left: 0px;
     background-image: url(../Pictures/button_prev.png);
 }
 
 .slider_ctrl_next {
-    right: 245px;
+    right: 0px;
     background-image: url(../Pictures/button_next.png);
 }
 
-.slider_heading {
+.title_list {
     position: absolute;
+    list-style: none;
+    top: 50%;
+    transform: translateY(-70%);
+    left: 187px;
+}
+
+.title_item {
+    line-height: 35px;
+}
+
+.slider_heading {
     color: #fff;
-    z-index: 100;
 }
 
 .h2 {
     font-size: 60px;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 220px;
 }
 
 .h3 {
     font-size: 24px;
     font-weight: 400;
-    left: 430px;
-    top: 310px;
 }
 
 .new_collection {
@@ -157,6 +166,9 @@
 /*правила для меню при :hover*/
 .new_collection {
     padding: 90px 0;
+    background-color: #e9f0fd;
+    width: 1600px;
+    margin: 0 auto;
 }
 .news {
     list-style: none;
@@ -272,8 +284,6 @@
     line-height: 40px;
 }
 
-
-
 .news_element {
   float: left;
 }
@@ -283,6 +293,8 @@
 }
 
 .footer {
+    margin: 0 auto;
+    width: 1600px;
     height: 90px;
     background-color: #323232;
     text-align: center;
@@ -291,6 +303,7 @@
 
 .footer_text {
     color:white;
+    margin: 0;
 }
 
 .text_color {
