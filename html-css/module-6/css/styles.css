@@ -12,6 +12,10 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+main {
+    padding-top: 100px;
+}
+
 .container{
     width: 1200px;
     margin:0 auto;
@@ -21,17 +25,17 @@ body{
 .header {
     display: flex;
     justify-content: space-between;
-    height: 65px;
     align-items: flex-end;
 }
 
 .navigation {
-    width: 490px;
+    min-width: 490px;
 }
 
 .nav_list {
     display: flex;
     justify-content: space-between;
+    padding-top: 30px;
 }
 
 .logo {
@@ -39,7 +43,6 @@ body{
     text-decoration: none;
     font-size: 30px;
     font-weight: 900;
-    padding-bottom: 15px;
     
 }
 
@@ -65,30 +68,32 @@ body{
 }
 
 /*правила для блоков заголовков*/
-.block-title {
-    text-align: center;
-    padding-top: 100px;
-}
-
-.block-title:after {
-    content:"";
-    display: block;
-    width: 60px;
-    height: 3px;
-    background-color: var(--color-red);
-    margin: 45px auto 0;
-}
-
 .first_line {
     font-family: 'Kaushan Script', cursive;
     font-size: 24px;
-    padding-bottom: 20px;
+    text-transform: none;
+       
 }
 
 .second_line {
     font-size: 30px;
     font-weight: bold;
     text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    margin-bottom: 60px;
+}
+
+.second_line:after {
+    content:"";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: var(--color-red);
+    margin:0 auto;
+    margin-top: 30px;
 }
 
 /* правила для списка сервисов*/
@@ -97,36 +102,61 @@ body{
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
-    height: 400px;
 }
 
 .list_element {
-    position: relative;
     width: 380px;
+    height: 170px;
+    position: relative;
 }
 
-.serv_img {
+.list_element::before {
+    content:"";
+    display: block;
+    width: 80px;
+    height: 32px;
     position: absolute;
-    transform: translateX(50%);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon_alarm::before {
+    background-image: url(../Pictures/ALARM.png);   
+}
+
+.icon_diagram::before {
+    background-image: url(../Pictures/LINE\ GRAPH.png);
+}
+
+.icon_pc::before {
+    background-image: url(../Pictures/COMPUTER\ _\ OK.png);
+}
+
+.icon_book::before {
+    background-image: url(../Pictures/BOOK\ 2.png);
+}
+
+.icon_home::before {
+    background-image: url(../Pictures/HOME.png);
+}
+
+.icon_digital::before {
+    background-image: url(../Pictures/IMAGE.png);
+}
+
+.list_title {
+    padding-left: 80px;
 }
 
 .line1 {
-    display: block;
     font-size: 14px;
     text-transform: uppercase;
-    position: absolute;
-    left: 80px;
+    padding-bottom: 15px;
 }
 
 .line2 {
-    display: block;
-    width: 300px;
-    line-height: 20px;
     font-size: 14px;
-    opacity: 0.7;
-    position: absolute;
-    left: 80px;
-    top: 30px;
+    line-height: 20px;
 }
 
 /* правила для параграфа team_description*/
@@ -175,6 +205,8 @@ body{
     opacity: 0;
     box-shadow: 8px 8px #95e1d3;
     transition: 200ms;
+    display: flex;
+    align-items: center;
 }
 
 .team_list_item:hover .fon_gradient {
@@ -189,10 +221,11 @@ body{
     justify-content: space-between;
     width: 231px;
     height: 56px;
-    margin: 205px auto 0 ;
+    margin: 0 auto;
 }
 
 .icon {
+    display: block;
     width: 56px;
     height: 56px;
     background-color: var(--color-yellow);
@@ -205,22 +238,24 @@ body{
     transition: 200ms;
 }
 
-.fcbk {
+.facebook {
+    width: 56px;
+    height: 56px;
     background-position: center;
     background-repeat: no-repeat;
     background-image: url(../Pictures/facebook.png);
 }
-.twit {
+.twitter {
     background-position: center;
     background-repeat: no-repeat;
     background-image: url(../Pictures/twitter.png);
 } 
-.print {
+.printerest {
     background-position: center;
     background-repeat: no-repeat;
     background-image: url(../Pictures/printerest.png);
 }
-.inst {
+.instagram {
     background-position: center;
     background-repeat: no-repeat;
     background-image: url(../Pictures/instagram.png);
