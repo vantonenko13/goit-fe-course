@@ -65,7 +65,7 @@ body {
     border-radius: 20px;
 }
 
-.nav_link:focus {
+.nav_link:focus, .nav_link:hover {
     border: 2px solid rgba(255, 255, 255, 1);
 }
 
@@ -76,6 +76,7 @@ body {
     text-transform: uppercase;
     text-align: center;
     line-height: 40px;
+    margin-bottom: 18px;
 }
 
 .lines {
@@ -86,8 +87,6 @@ body {
     font-size: 20px;
     color:  #fff;
     text-align: center;
-    padding-top: 18px;
-    padding-bottom: 36px;
     line-height: 30px;
     display: block;
     width: 270px;
@@ -96,7 +95,7 @@ body {
 
 .btn_find {
     display: block;
-    margin: auto;
+    margin: 36px auto 0;
     color: #fff;
     font-weight: 700;
     width: 288px;
@@ -110,7 +109,7 @@ body {
     text-decoration: none;
 }
 
-.btn_find:focus {
+.btn_find:focus, .btn_find:hover {
     border: 1px solid #ffffff;
     border-radius: 20px;
 }
@@ -125,8 +124,13 @@ body {
     padding-bottom: 30px;
 }
 
+.main_content {
+    padding-bottom: 50px;
+}
+
 .list_partner {
     display: block;
+    margin-bottom: 50px;
 }
 
 .list_partner_item {
@@ -202,11 +206,11 @@ body {
     border: 2px solid #ff4e50;
     border-radius: 25px;
     background-color: #ffffff;
-    margin: 48px auto 48px;
+    margin: auto;
     transition: all 300ms;
 }
 
-.see_more:focus {
+.see_more:focus, .see_more:hover {
     background-color: #ff4e50;
     color: #fff;
 }
