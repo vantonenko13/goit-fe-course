@@ -1,0 +1,244 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.bg-img {
+    background-image: url(../img/banner-1440.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 100px;
+    background-position: center;
+}
+
+.header {
+    padding-top: 48px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    padding-bottom: 38px;
+}
+
+.nav_menu {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 184px;
+    padding-bottom: 58px;
+}
+
+.nav_item {
+    display: block;
+}
+
+.nav_link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    display: block;
+    margin: auto;
+    transition: border 300ms;
+    text-align: center;
+    border: 2px solid rgba(255, 255, 255, 0);
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+
+.nav_link:focus, .nav_link:hover {
+    border: 2px solid rgba(255, 255, 255, 1);
+}
+
+.title {
+    font-size: 34px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 40px;
+    margin-bottom: 18px;
+}
+
+.lines {
+    display: block;
+}
+
+.sub_title {
+    font-size: 20px;
+    color:  #fff;
+    text-align: center;
+    line-height: 30px;
+    display: block;
+    width: 270px;
+    margin: auto;
+}
+
+.btn_find {
+    display: block;
+    margin: 36px auto 0;
+    color: #fff;
+    font-weight: 700;
+    width: 288px;
+    height: 48px;
+    background-color: #ff4e50;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 46px;
+    border: 1px solid #ff4e50;
+    transition: border 300ms;
+    text-decoration: none;
+}
+
+.btn_find:focus, .btn_find:hover {
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+}
+
+.content_title {
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    display: block;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+
+.main_content {
+    padding-bottom: 50px;
+}
+
+.list_partner {
+    display: block;
+    margin-bottom: 50px;
+}
+
+.list_partner_item {
+    text-align: center;
+    width: 220px;
+    margin: auto;
+}
+
+.img_wrap {
+    position: relative;
+    width: 122px;
+    height: 122px;
+    margin: auto;
+}
+
+.img_wrap img{
+    border-radius: 50%;
+}
+
+.name {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Montserrat', serif;
+    padding: 16px 0;
+}
+
+.partner_desc {
+    font-size: 14px;
+    color: #777;
+    padding-bottom: 20px;
+}
+
+.icon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border: 4px solid var(--color-white);
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 100;
+    border: 2px solid white;
+}
+
+.tv {
+    background-image: url(../img/icon-tv.png);
+    background-color: rgb(255, 11, 11);
+}
+
+.testube {
+    background-image: url(../img/icon-chem.png);
+    background-color: #ffa507;
+}
+
+.coffe {
+    background-image: url(../img/icon-coffee.png);
+    background-color: #1cd7ad;
+}
+
+.telegram {
+    background-image: url(../img/icon-send.png);
+    background-color: #4e73db;
+}
+
+.see_more {
+    display: block;
+    color: #ff4e50;
+    font-weight: 700;
+    width: 288px;
+    height: 48px;
+    border: 2px solid #ff4e50;
+    border-radius: 25px;
+    background-color: #ffffff;
+    margin: auto;
+    transition: all 300ms;
+}
+
+.see_more:focus, .see_more:hover {
+    background-color: #ff4e50;
+    color: #fff;
+}
+
+@media (min-width: 768px) {
+    .header {
+        flex-wrap: inherit;
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+    .title {
+        font-size: 50px;
+    }
+
+    .list_partner {
+        display: flex;
+        justify-content: space-around; 
+        flex-wrap: wrap;       
+    }
+
+    .list_partner_item {
+        width: 50%;
+    }
+
+    .partner_desc {
+        width: 200px;
+        margin: auto;
+    }
+}
+
+@media (min-width: 940px) {
+    .list_partner_item {
+        width: 25%;
+    }
+}
