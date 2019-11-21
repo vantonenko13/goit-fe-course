@@ -43,8 +43,8 @@ body {
 }
 
 .nav_item {
-    display: block;
-}
+    display: block;  
+ }
 
 .nav_link {
     color: #fff;
@@ -62,7 +62,7 @@ body {
 
 .nav_link:focus, .nav_link:hover {
     border: 2px solid rgba(255, 255, 255, 1);
-}
+ }
 
 .title {
     font-size: 34px;
@@ -107,6 +107,8 @@ body {
 .btn_find:focus, .btn_find:hover {
     border: 1px solid #ffffff;
     border-radius: 20px;
+    text-decoration: none;
+    color: #fff;
 }
 
 .content_title {
