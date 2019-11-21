@@ -119,7 +119,7 @@ body {
     padding-bottom: 30px;
 }
 
-.main_content {
+.main {
     padding-bottom: 50px;
 }
 
@@ -130,7 +130,7 @@ body {
 
 .list_partner_item {
     text-align: center;
-    width: 220px;
+
     margin: auto;
 }
 
@@ -203,6 +203,7 @@ body {
     background-color: #ffffff;
     margin: auto;
     transition: all 300ms;
+    margin-top: 50px;
 }
 
 .see_more:focus, .see_more:hover {
@@ -221,24 +222,11 @@ body {
         font-size: 50px;
     }
 
-    .list_partner {
-        display: flex;
-        justify-content: space-around; 
-        flex-wrap: wrap;       
-    }
 
-    .list_partner_item {
-        width: 50%;
-    }
+
 
     .partner_desc {
         width: 200px;
         margin: auto;
-    }
-}
-
-@media (min-width: 940px) {
-    .list_partner_item {
-        width: 25%;
     }
 }
