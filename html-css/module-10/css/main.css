@@ -146,18 +146,20 @@ body {
     display: block;
 }
 
-.block-head__first-line {
+.header__subtitle {
     font-size: 24px;
     font-family: 'Kaushan Script', cursive;
     font-weight: bold;
     text-align: center;
     padding: 20px 0 0 0;
+    line-height: 60px;
 }
 
-.block-head__second-line {
+.header__title {
     font-size: 30px;
     font-weight: bold;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .block-head__text-section {
